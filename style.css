@@ -1,0 +1,1178 @@
+/* BODY + FOOTER */
+body,
+footer {
+  color: #262637;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+/* ==================== HEADER ==================== */
+header {
+  width: 100%;
+  background: #11828d;
+}
+
+/* LOGO IMAGE */
+.logo {
+  padding: 4px;
+}
+
+/* ==================== TOP NAVIGATION BAR ==================== */
+.web_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* TOP NAVIGATION BAR - MENU */
+.menu {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+}
+
+/* TOP NAVIGATION BAR - MENU LINKS */
+.menu a {
+  margin: 0 36px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+/* TOP NAVIGATION BAR - HOVER ANIMATION */
+.menu a:hover {
+  color: white;
+}
+.menu a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #d1762e;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+.menu a:hover::before {
+  transform: scaleX(1);
+}
+
+/* TOP DROPDOWN */
+.dropdown {
+  position: relative;
+  justify-content: space-between;
+}
+
+/* TOP DROPDOWN - BUTTON */
+.drop_btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 36px;
+  font-size: 17px;
+  top: 1px;
+  margin: 10px;
+}
+
+/* TOP DROPDOWN SUBMENU */
+.dropdown-content {
+  font-size: 17px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #0a828d;
+  min-width: 230px;
+  box-shadow: 0 4px 10px 0 #262637b0;
+  z-index: 1;
+  margin-top: -5px;
+  left: 85%;
+  transform: translateX(-50%);
+  opacity: 0;
+  text-align: left;
+}
+/* TOP DROPDOWN SUBMENU - LINKS */
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin: 14px 30px;
+}
+/* TOP DROPDOWN SUBMENU - FADE IN ANIMATION */
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* TOP DROPDOWN SUBMENU - UNDERLINE ANIMATION */
+.dropdown-content a:hover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #d1762e;
+  transform: scaleX(0);
+  transition: transform 0.6s ease;
+  transform-origin: bottom left;
+}
+.dropdown-content a:hover::before {
+  transform: scaleX(1);
+}
+
+/* TOP NAV DROPDOWN ARROW */
+.down_arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* ==================== CONTAINER FOR VERTICAL NAV AND IMAGE ==================== */
+.vertical_container {
+  display: flex;
+  margin-bottom: -20px;
+}
+
+/* ==================== VERTICAL SUBNAV ==================== */
+.vertical_menu {
+  background: #262637;
+  height: 200px;
+  width: 210px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: white;
+}
+
+/* VERTICAL SUBNAV - BUTTONS */
+.vertical_menu li {
+  height: 40px;
+  width: 210px;
+  padding: 10px 0 0 20px;
+  background-color: #262637;
+  position: relative;
+}
+
+/* VERTICAL SUBNAV - LINK */
+.vertical_menu li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+/* DISPLAY THE SUBNAV SUBMENU ON HOVER */
+.vertical_menu li:hover ul {
+  display: block;
+}
+
+/* VERTICAL SUBNAV - HOVER */
+.vertical_menu li:hover {
+  background: #4d4d63;
+}
+
+/* VERTICAL SUBNAV - SUBMENU */
+.vertical_submenu {
+  position: absolute;
+  display: none;
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 100%;
+  z-index: 2;
+}
+
+/* VERTICAL SUBNAV - SUBMENU BUTTONS */
+.vertical_submenu li {
+  height: 40px;
+  width: 180px;
+  padding: 10px 0 0 20px;
+  display: block;
+}
+
+/* ==================== OVERLAY TEXT FOR BANNER IMAGE ==================== */
+#home_overlay_text {
+  position: relative;
+  top: -54px;
+  left: 294px;
+  width: 486px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  background: #262637c7;
+  padding: 10px;
+}
+
+.overlay_text {
+  position: relative;
+  top: -130px;
+  left: 95px;
+  width: 600px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  background: #262637c7;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ==================== HOMEPAGE - PROPERTY EXPERT SECTION ==================== */
+#property_experts {
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* PROPERTY EXPERT IMAGE  */
+#realtor_image {
+  margin-top: -10px;
+  float: left;
+}
+#realtor_image img {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/*  PROPERTY EXPERT TEXT  */
+#property_experts_description {
+  background: #262637;
+  margin-top: -10px;
+  width: 621px;
+  height: 250px;
+  padding: 10px;
+  margin-left: 379px;
+  border-collapse: collapse;
+  position: absolute;
+  color: #fff;
+  float: left;
+  z-index: 1;
+}
+
+/* PROPERTY EXPERT - HEADING */
+#property_experts h2 {
+  padding-top: 0;
+  padding-left: 16px;
+  margin-top: 10px;
+}
+#property_experts p {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+/* PROPERTY EXPERT BUTTONS */
+.learn_btn {
+  border-radius: 4px;
+  background-color: #0a828d;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: right;
+  margin-right: 8px;
+  margin-top: -8px;
+}
+
+/* PROPERTY EXPERT BUTTON - ARROWS */
+.learn_btn span {
+  display: inline-block;
+  position: relative;
+  transition: 0.6s;
+}
+
+/* PROPERTY EXPERT BUTTON - ARROW HOVER ANIMATION */
+.learn_btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.6s;
+}
+.learn_btn:hover span {
+  padding-right: 15px;
+}
+.learn_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ==================== HOMEPAGE TITLES SECTION ==================== */
+.homepage_titles {
+  clear: both; /* -- CLEAR BEING USED FOR ASSIGNMENT -- */
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 60px;
+  display: inline-block;
+}
+
+.homepage_titles h2 {
+  display: block;
+  color: #262637;
+}
+
+/* ========== SLIDESHOW ========== */
+* {
+  box-sizing: border-box;
+}
+
+/* SLIDESHOW CONTAINER */
+.slideshow_container {
+  min-width: 900px;
+  max-width: 900px;
+  height: 300px;
+  position: relative;
+  margin-left: 50px;
+  background: #0a828d;
+  float: left;
+  padding: 14px;
+  box-shadow: #2626376d 6px 6px 14px 0px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+/* SLIDESHOW - HIDE IMAGES BY DEFAULT */
+.mySlides {
+  display: none;
+}
+
+/* SLIDESHOW - IMAGES */
+.mySlides img {
+  border-radius: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* SLIDESHOW - NEXT/PREVIOUS BUTTONS */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 1;
+}
+
+/* SLIDESHOW - NEXT BUTTON TO THE RIGHT */
+.next {
+  right: 0;
+  border-radius: 100px 0 0 100px;
+}
+.prev {
+  left: 0;
+  border-radius: 0 100px 100px 0;
+}
+
+/* SLIDESHOW - ON HOVER ADD BACKGROUND COLOUR TO BUTTONS */
+.prev:hover,
+.next:hover {
+  background-color: #262637b6;
+}
+
+/* SLIDESHOW - REVIEW STARS */
+.review_star_container {
+  float: left;
+  margin-left: 365px;
+}
+.review_star_container img {
+  display: inline-block;
+}
+
+/* SLIDESHOW - SLIDE HEADERs */
+.slide_text h2 {
+  color: white;
+  font-size: 15px;
+  margin: auto;
+  margin-top: 8px;
+  text-align: center;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+/* SLIDESHOW - SLIDE TEXT */
+.slide_text p {
+  color: #f2f2f2;
+  font-size: 16px;
+  position: relative;
+  margin: auto;
+  margin-top: 4px;
+  text-align: center;
+  font-family: verdana;
+  float: left;
+  line-height: 24px;
+  padding: 4px;
+  font-style: italic;
+}
+
+/* SLIDESHOW - FADE ANIMATION */
+.mySlides {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ==================== PROPERTY CONTAINER ON PAGE ==================== */
+.property_container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 900px;
+  font-size: 16px;
+  font-family: verdana;
+  color: white;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+/* PROPERTY BUTTON (FOR MODAL) */
+.property_container button {
+  background: none;
+  padding: 0;
+  border: none;
+  height: 200px;
+  width: 900px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  box-shadow: #2626376d 6px 6px 14px 0px;
+}
+
+/* PROPERTY IMAGE */
+.property_container img {
+  float: left;
+}
+
+/* PROPERTY INFORMATION */
+.property_right {
+  width: 600px;
+  position: absolute;
+  height: 200px;
+  top: 0;
+  right: 0;
+  padding-left: 20px;
+  background: #262637;
+  z-index: 1;
+}
+
+/* BUTTON HOVER */
+.property_container:hover .property_right {
+  cursor: pointer;
+  background: #262637ea;
+}
+
+/* PROPERTY DESCRIPTION HEADER */
+.property_right h3 {
+  color: #11828d;
+  font-size: 18px;
+}
+
+/* PROPERTY INFORMATION TEXT */
+.property_right p {
+  color: white;
+  margin-top: -8px;
+  vertical-align: middle;
+  float: left;
+}
+
+/* BED AND BATH INFORMATION */
+.bed_bath_info {
+  display: inline-block;
+}
+
+.bed_bath_info .bed_bath_icon {
+  display: inline-block;
+}
+.bed_bath_icon img {
+  margin-top: -11px;
+  margin-right: 8px;
+  margin-left: 16px;
+}
+
+/* PROPERTY DESCRIPTION */
+.property_description {
+  width: 560px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+.property_description p {
+  font-style: italic;
+}
+
+/* PROPERTY ADDED ON */
+.property_added {
+  float: right;
+  margin-right: 20px;
+}
+.property_added p {
+  color: #d1762e;
+  font-weight: bold;
+}
+
+/*  ==================== PROPERTY MODAL BOX ==================== */
+/* MODAL BOX - BACKGROUND */
+.modal {
+  background-color: #262637b0;
+  display: none;
+  position: fixed;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 2;
+}
+
+/* MODAL BOX - CONTAINER */
+.modal_container {
+  position: relative;
+  margin: auto;
+  width: 1300px;
+  height: 445px;
+  overflow: hidden;
+  background: white;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1s;
+  animation-name: animatetop;
+  animation-duration: 0.6s;
+  box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+  font-family: verdana;
+  color: #262637;
+  z-index: 2;
+}
+
+/* MODAL BOX - LEFT */
+.modal_left {
+  float: left;
+  height: 445px;
+  background: #262637;
+  color: white;
+}
+
+/*  ==================== MODAL BOX LEFT - SLIDESHOW  ==================== */
+* {
+  box-sizing: border-box;
+}
+
+/* SLIDESHOW CONTAINER */
+.modal_slideshow_container {
+  width: 500px;
+  height: 320px;
+  float: left;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+/* SLIDESHOW - HIDE IMAGES BY DEFAULT */
+.modal_slides {
+  display: none;
+}
+
+/* SLIDESHOW - NEXT/PREVIOUS BUTTONS */
+.modal_prev,
+.modal_next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #262637b6;
+}
+
+/* SLIDESHOW - NEXT BUTTON TO THE RIGHT */
+.modal_next {
+  right: 0;
+  border-radius: 100px 0 0 100px;
+}
+.modal_prev {
+  left: 0;
+  border-radius: 0 100px 100px 0;
+}
+
+/* SLIDESHOW - FADE ANIMATION */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MODAL BOX LEFT - TEXT */
+.modal_left p {
+  margin-left: 20px;
+}
+
+/* MODAL BOX LEFT - LIST */
+.modal_left ul {
+  column-count: 2;
+  width: 100%;
+  line-height: 24px;
+  margin-top: -9px;
+  font-size: 14px;
+}
+
+/* MODAL BOX - CLOSE BUTTON */
+.close,
+.close-imp {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0;
+  transition: 0.2s ease-out;
+  z-index: 1;
+}
+.close:hover {
+  color: #d1762e;
+  cursor: pointer;
+}
+
+/* MODAL BOX - RIGHT */
+.modal_right {
+  width: 50%;
+  float: left;
+}
+
+/* MODAL BOX - RIGHT TEXT */
+.modal_right p {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+/* MODAL BOX RIGHT - HEADER */
+.modal_header {
+  background-color: #11828d;
+  color: white;
+  height: 60px;
+  width: 1000px;
+}
+.modal_header h2 {
+  margin-top: 5px;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: -10px;
+}
+
+/* MODAL BOX - PROPERTY INFORMATION */
+.modal_bed_bath_info {
+  display: inline-block;
+  margin-left: 30px;
+}
+/* MODAL BOX - PROPERTY INFORMATION ICONS AND TEXT */
+.modal_bed_bath_icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+.modal_bed_bath_icon img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.modal_bed_bath_icon p {
+  display: inline-block;
+  margin: 0;
+}
+.modal_description {
+  width: 780px;
+  margin-top: 0;
+  line-height: 22px;
+}
+
+/* ANIMATION */
+@-webkit-keyframes animatetop {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* ==================== CONTACT US PAGE CSS ==================== */
+
+/* -- CONTACT DESCRIPTION -- */
+#contact_description {
+  margin-top: -40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTAINER FOR THE CONTACT PAGE INFORMATION AND FORM */
+#contact_container {
+  width: 100%;
+  height: 765px;
+}
+
+/* SUB CONTAINERS TO SEPERATE CONTACT INFO AND FORM */
+#contact_section {
+  width: 50%;
+  float: left;
+}
+
+/* CONTACT INFORMATION (CONTACT INFORMATION LEFT SIDE) */
+#contact_information {
+  width: 50%;
+  height: 765px;
+  float: left;
+  padding: 10px;
+}
+
+/* CONTACT INFO HEADINGS */
+#contact_information h2 {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: -6px;
+  color: #11828d;
+}
+
+/* CONTACT INFO TEXT */
+#contact_information p {
+  color: #262637;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-left: 22px;
+}
+
+/* FEEDBACK FORM (CONTACT INFORMATION RIGHT SIDE) */
+#feedback_form {
+  background: #11828d;
+  color: white;
+  width: 50%;
+  height: 756px;
+  padding: 30px;
+  float: right;
+  border: 1px solid #262637;
+}
+
+/* FEEDBACK FORM - LABELS */
+#feedback_form label {
+  letter-spacing: 1px;
+}
+
+/* FEEDBACK FORM - TEXT-FIELDS + BUTTONS */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="email"],
+select {
+  border: 1px solid #262637;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  padding: 6px;
+  font-family: Verdana;
+  font-size: 16px;
+  color: #262637;
+}
+
+/* FEEDBACK FORM - RADIO + CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px 0px 20px 15px;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+/* FEEDBACK FORM - TEXTAREA */
+textarea {
+  box-sizing: border-box;
+  resize: none;
+  border: 1px solid #262637;
+  width: 100%;
+  height: 110px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+  font-family: Verdana;
+  font-size: 16px;
+  color: #262637;
+}
+
+/* FEEDBACK FORM - SUBMIT BUTTON */
+input[type="submit"] {
+  padding: 5px 30px;
+  margin-top: 0px;
+  border: 1px solid #262637;
+  font-family: Verdana;
+  font-size: 16px;
+  color: #262637;
+  float: right;
+  width: 100px;
+  height: 30px;
+}
+input[type="submit"]:hover {
+  background-color: #ffc799;
+}
+input[type="submit"]:active {
+  background-color: #f19b55;
+}
+
+/* FEEDBACK FORM - FOCUS */
+input:focus,
+textarea:focus {
+  outline: none !important;
+  background: #ffc799;
+}
+
+/* ==================== COMPANY PAGE CSS ==================== */
+/* ----- NORTH-WEST LONDON'S BEST SECTION ----- */
+#about_best {
+  justify-content: space-around;
+  width: 850px;
+  font-size: 15px;
+  height: 224px;
+  margin-left: 0;
+  margin-top: -20px;
+}
+
+/* LEFT SIDE/INFORMATION SECTION */
+#about_best_description {
+  background: #11838d5d;
+  height: 224px;
+  width: 450px;
+  float: left;
+  border-radius: 20px 0 0 20px;
+  padding-top: 6px;
+}
+
+/* HEADER */
+#about_best_description h2 {
+  width: 100%;
+  padding-left: 26px;
+}
+
+/* TEXT */
+#about_best_description p {
+  margin-top: -20px;
+  line-height: 24px;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  padding-left: 26px;
+}
+
+/* RIGHT SIDE/IMAGE */
+#about_best_image {
+  float: right;
+  vertical-align: top;
+}
+#about_best_image img {
+  border-radius: 0 20px 20px 0;
+  border-collapse: collapse;
+  height: 224px;
+}
+
+/* ----- CUSTOMERS FIRST SECTION ----- */
+#about_cust {
+  justify-content: space-around;
+  width: 850px;
+  font-size: 15px;
+  margin-right: 0;
+  margin-top: 40px;
+  float: right;
+  color: white;
+}
+
+/* LEFT SIDE/INFORMATION SECTION */
+#about_cust_description {
+  background: #2f2f44;
+  height: 224px;
+  width: 450px;
+  float: right;
+  border-radius: 0 20px 20px 0;
+  padding-top: 6px;
+}
+
+/* HEADER */
+#about_cust_description h2 {
+  width: 100%;
+  padding-left: 26px;
+}
+
+/* TEXT */
+#about_cust_description p {
+  margin-top: -20px;
+  line-height: 24px;
+  width: 100%;
+  float: right;
+  padding: 20px;
+  padding-left: 26px;
+}
+
+/* RIGHT SIDE/IMAGE */
+#about_cust_image {
+  float: left;
+  vertical-align: top;
+}
+#about_cust_image img {
+  border-radius: 20px 0 0 20px;
+  border-collapse: collapse;
+  height: 224px;
+}
+
+/* ----- STRONG VALUES SECTION ----- */
+#about_values {
+  justify-content: space-around;
+  width: 850px;
+  font-size: 15px;
+  height: 224px;
+  float: left;
+  margin-left: 0;
+  margin-top: 40px;
+}
+#about_values_description {
+  background: #11838d5d;
+  height: 224px;
+  width: 450px;
+  float: left;
+  border-radius: 20px 0 0 20px;
+  padding-top: 6px;
+}
+
+/* HEADER */
+#about_values_description h2 {
+  width: 100%;
+  padding-left: 26px;
+}
+
+/* TEXT */
+#about_values_description p {
+  margin-top: -20px;
+  line-height: 24px;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  padding-left: 26px;
+}
+
+/* RIGHT SIDE/IMAGE */
+#about_values_image {
+  float: right;
+  vertical-align: top;
+}
+#about_values_image img {
+  border-radius: 0 20px 20px 0;
+  border-collapse: collapse;
+  height: 224px;
+}
+
+/* ----- AREAS WE COVER SECTION ----- */
+#about_areas {
+  justify-content: space-around;
+  width: 850px;
+  font-size: 15px;
+  height: 224px;
+  margin-right: 0;
+  margin-top: 40px;
+  float: right;
+  color: white;
+}
+
+/* LEFT SIDE/INFORMATION SECTION */
+#about_areas_description {
+  background: #2f2f44;
+  height: 224px;
+  width: 450px;
+  float: right;
+  border-radius: 0 20px 20px 0;
+  padding-top: 6px;
+}
+
+/* HEADER */
+#about_areas_description h2 {
+  width: 100%;
+  padding-left: 26px;
+}
+
+/* TEXT */
+#about_areas_description p {
+  margin-top: -20px;
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  float: right;
+  padding: 20px;
+  padding-left: 26px;
+}
+
+/* RIGHT SIDE/IMAGE */
+#about_areas_image {
+  float: left;
+  vertical-align: top;
+}
+#about_areas_image img {
+  border-radius: 20px 0 0 20px;
+  border-collapse: collapse;
+  height: 224px;
+}
+
+/* ----- STRONG VALUES SECTION ----- */
+#about_experienced {
+  justify-content: space-around;
+  width: 850px;
+  font-size: 15px;
+  height: 224px;
+  float: left;
+  margin-left: 0;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+#about_experienced_description {
+  background: #11838d5d;
+  height: 224px;
+  width: 450px;
+  float: left;
+  border-radius: 20px 0 0 20px;
+  padding-top: 6px;
+}
+
+/* HEADER */
+#about_experienced_description h2 {
+  width: 100%;
+  padding-left: 26px;
+}
+
+/* TEXT */
+#about_experienced_description p {
+  margin-top: -20px;
+  line-height: 24px;
+  width: 100%;
+  float: left;
+  padding: 20px;
+  padding-left: 26px;
+}
+
+/* RIGHT SIDE/IMAGE */
+#about_experienced_image {
+  float: right;
+  vertical-align: top;
+}
+#about_experienced_image img {
+  border-radius: 0 20px 20px 0;
+  border-collapse: collapse;
+  height: 224px;
+}
+
+/* ==================== MEET THE TEAM PAGE ==================== /*
+
+/* TEAM MEMBER CONTAINER */
+.team_member_contain {
+  height: 420px;
+  width: 300px;
+  border-radius: 10px;
+  float: left;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+/* TEAM MEMBER PHOTOS */
+.team_photo {
+  border-radius: 500px;
+  border: 3px solid #262637;
+  margin-left: 48px;
+  margin-top: 24px;
+  background: #262637;
+  margin-bottom: 0;
+}
+/* TEAM MEMBER INFORMATION */
+.team_member_info {
+  text-align: center;
+}
+.team_member_info h3 {
+  color: #11828d;
+  margin-bottom: 14px;
+}
+
+.team_member_info p {
+  line-height: 14px;
+  letter-spacing: 0.5px;
+}
+
+.team_member_info hr {
+  width: 70%;
+  border: solid 1px #262637;
+}

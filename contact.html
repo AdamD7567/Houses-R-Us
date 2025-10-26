@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Contact Houses R us for any problems or queries." />
+    <meta name="keyword" content="Houses R us, Estate agent, Estate agent near me, Contact us, Customer support, Properties, Homes, Houses, House prices, Listings, Detached, Semi-detached, Terraced, Bungalow, Flat, North-West London, London, Uxbridge, Harrow, Wembley, Greenford, Ruislip" />
+    <meta name="author" content="Adam Imane" />
+    <!-- CSS REFERENCE -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- WEBPAGE TITLE -->
+    <title>Houses R us - Contact us</title>
+  </head>
+
+  <!---------- MAIN SECTION OF WEBPAGE ---------->
+  <body>
+    <!-------------------------------- HEADER ------------------------------>
+    <header>
+      <div class="web_header">
+        <!-- COMPANY LOGO -->
+        <a class="logo" title="Go to homepage" href="index.html"><img alt="Houses R Us logo" src="images/navigation/logo.png" /></a>
+        <!---------- TOP HORIZONTAL NAVIGATION MENU ---------->
+        <nav>
+          <div class="menu">
+            <!-- HOME BUTTON -->
+            <a title="Go to home page" href="index.html">HOME</a>
+            <!----- ABOUT US DROPDOWN ----->
+            <div class="dropdown">
+              <!-- ABOUT US BUTTON -->
+              <button class="drop_btn" title="About Houses R Us">
+                ABOUT US
+              </button>
+              <div class="dropdown-content">
+                <!-- COMPANY SUBMENU BUTTON -->
+                <a title="Learn about the company" href="company.html">About the company</a>
+                <!-- TEAM SUBMENU BUTTON -->
+                <a title="Meet the team" href="team.html">Meet the team</a>
+              </div>
+            </div>
+            <!----- END OF DROPDOWN ----->
+            <!-- CONTACT BUTTON -->
+            <a title="Go to contact page" href="contact.html">CONTACT US</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-------------------------------- END OF HEADER -------------------------------->
+
+    <!-------------------------------- MAIN SECTION -------------------------------->
+    <main>
+      <!-------------------------------- VERTICAL CONTAINER FOR SUBMENU AND BANNER -------------------------------->
+      <div class="vertical_container">
+        <!---------- VERTICAL SUBMENU ---------->
+        <ul class="vertical_menu">
+          <!-- DETATCHED BUTTON -->
+          <li><a title="Look at detatched properties" href="detached.html">DETATCHED</a></li>
+          <!-- SEMI-DETATCHED BUTTON -->
+          <li><a title="Look at semi-detatched properties" href="semi_detached.html">SEMI-DETACHED</a></li>
+          <!-- TERRACED BUTTON -->
+          <li><a title="Look at terraced properites" href="terraced.html">TERRACED</a></li>
+          <!-- BUNGALOW BUTTON -->
+          <li><a title="Look at bungalows" href="bungalow.html">BUNGALOWS</a></li>
+          <!-- APARTMENTS BUTTON -->
+          <li>
+            <a title="Look at apartments">APARTMENTS</a>
+            <!-- APARTMENTS BUTTON DROP DOWN -->
+            <ul class="vertical_submenu">
+              <!-- FLATS BUTTON -->
+              <li><a title="Look at flats" href="flats.html">FLATS</a></li>
+              <!-- STUDIO BUTTON -->
+              <li><a title="Look at studio apartments" href="studio.html">STUDIOS</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!---------- END OF VERTICAL SUBMENU ---------->
+
+        <!---------- BANNER IMAGE ---------->
+        <div id="banner">
+          <img alt="Landscape of flats" src="images/contact/contact_banner.png" />
+          <!-- OVERLAY TEXT -->
+          <div class="overlay_text">CONTACT US</div>
+        </div>
+        <!---------- END OF BANNER IMAGE ---------->
+      </div>
+      <!-------------------------------- END OF VERTICAL MENU AND BANNER CONTAINER -------------------------------->
+
+      <!-------------------------------- CONTACT US DESCRIPTION/INSTRUCTION SECTION -------------------------------->
+      <div id="contact_description">
+        <p>Our team members are always happy to help. If you have any questions about one of our properties, reach out to us via our contact information or fill out the form below and a member of our team will get back to you as soon as possible.</p>
+      </div>
+      <!-- CONTACT INFORMATION CONTAINER -->
+      <div id="contact_container">
+        <div class="contact_section">
+          <!-- MAP AND CONTACT INFORMATION -->
+          <div id="contact_information">
+            <div>
+              <h2 style="margin-top: 15px;">OFFICE HOURS</h2>
+              <p style="text-align: center; font-size: 18px; margin-left: 2px;">MON - FRI: 9-5 | SAT: 11-4 | SUN: CLOSED</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.3223458785436!2d-0.47667813033529466!3d51.54459243227917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766e776c1e69b3%3A0x34a1b7c69efb465f!2s266-268%20High%20St%2C%20Uxbridge%20UB8%201LQ!5e0!3m2!1sen!2suk!4v1706809541916!5m2!1sen!2suk" style="height: 440px; width: 438px; border: 1px solid #262637; margin-left: 22px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <h2 style="margin-top: 26px; margin-bottom: 20px;">CONTACT INFORMATION</h2>
+              <p>OFFICE NUMBER (UK): 01632 960275</p>
+              <p>OFFICE NUMBER (INTERNATIONAL): +44 1632 960275</p>
+              <p>GENERAL ENQUIRES: 40196735@HRUC.AC.UK</p>
+              <p>ADDRESS: 266-268 HIGH STREET, UXBRIDGE, UB8 1LQ</p>
+            </div>
+          </div>
+          <div class="contact_section">
+            <!-- FEEDBACK FORM -->
+            <div id="feedback_form">
+              <form name="f_form" onsubmit="return validate()" action="mailto:40196735@hruc.ac.uk?subject=Customer_Query" method="post" enctype="text/plain">
+                <!-- FIRST NAME -->
+                <label for="fname">FIRST NAME:</label>
+                <input type="text" id="fname" name="fname" placeholder="Your name.." />
+
+                <!-- SURNAME -->
+                <label for="lname">SURNAME:</label>
+                <input type="text" id="lname" name="lname" placeholder="Your surname.." />
+
+                <!-- EMAIL -->
+                <label for="email">EMAIL:</label>
+                <input type="text" id="email" name="email" placeholder="Your email.." />
+
+                <!-- PHONE NUMBER -->
+                <label for="phone">PHONE NUMBER:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number.." />
+
+                <!-- CONTACT METHOD -->
+                <label>PREFERRED CONTACT METHOD:</label><br />
+                <input type="radio" id="pref_email" name="pref_contact" value="Email" />
+                <label for="pref_email">Email</label>
+
+                <input type="radio" id="pref_phone" name="pref_contact" value="Phone" />
+                <label for="pref_phone">Phone</label>
+
+                <input type="radio" id="pref_text" name="pref_contact" value="SMS" />
+                <label for="pref_text">SMS</label><br />
+
+                <!-- CONTACT REASON -->
+                <label>REASON FOR CONTACT:</label><br />
+                <input type="checkbox" id="option1" name="reason" value="buying" />
+                <label for="option1">Buying</label>
+
+                <input type="checkbox" id="option2" name="reason" value="selling" />
+                <label for="option2">Selling</label>
+
+                <input type="checkbox" id="option3" name="reason" value="renting" />
+                <label for="option3">Renting</label>
+
+                <input type="checkbox" id="option4" name="reason" value="query" />
+                <label for="option4">Query</label><br />
+
+                <!-- PROPERTY AREA -->
+                <label for="area">LISTED PROPERTY AREA:</label>
+                <select id="area" name="area">
+                  <option disabled selected value="">-- Select an option --</option>
+                  <option id="area_option1" value="none">None</option>
+                  <option id="area_option2" value="greenford">Greenford</option>
+                  <option id="area_option3" value="harrow">Harrow</option>
+                  <option id="area_option4" value="ruislip">Ruislip</option>
+                  <option id="area_option5" value="uxbridge">Uxbridge</option>
+                  <option id="area_option6" value="wembley">Wembley</option>
+                </select>
+
+                <!-- ADDITIONAL INFO -->
+                <label for="add_info">ADDITIONAL INFORMATION:</label>
+                <textarea id="add_info" name="add_info" placeholder="Information about your query here.."></textarea>
+
+                <!-- SUBMIT BUTTON -->
+                <div>
+                  <input type="submit" value="Send" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------- END OF CONTACT US DESCRIPTION/INSTRUCTION SECTION -------------------------------->
+    </main>
+    <!-------------------------------- END OF MAIN SECTION -------------------------------->
+
+    <!-------------------------------- FOOTER SECTION -------------------------------->
+    <footer>
+      <hr style="border: 1px solid #262637; margin-top: 15px; position: relative;" />
+      <!-- COPYRIGHT -->
+      <h5>&copy;Houses R Us 2024</h5>
+    </footer>
+    <!-------------------------------- END OF FOOTER SECTION -------------------------------->
+    <!-- SCRIPT REFERENCE -->
+    <script src="scripts/validation.js"></script>
+  </body>
+</html>
