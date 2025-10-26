@@ -1,13 +1,15 @@
 /* BODY + FOOTER */
 body,
 footer {
-  color: #262637;
-  width: 1000px;
-  margin: 0 auto;
+  width: 100%;
   font-family: Verdana;
   font-size: 16px;
+  margin: 0;
 }
 
+body {
+  background-color: #c4f3f5;
+}
 /* ==================== HEADER ==================== */
 header {
   width: 100%;
@@ -179,7 +181,9 @@ header {
 /* ==================== CONTAINER FOR VERTICAL NAV AND IMAGE ==================== */
 .vertical_container {
   display: flex;
-  margin-bottom: -20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 0;
 }
 
 /* ==================== VERTICAL SUBNAV ==================== */
@@ -196,7 +200,7 @@ header {
 /* VERTICAL SUBNAV - BUTTONS */
 .vertical_menu li {
   height: 40px;
-  width: 210px;
+  width: 100%;
   padding: 10px 0 0 20px;
   background-color: #262637;
   position: relative;
@@ -241,6 +245,14 @@ header {
   display: block;
 }
 
+/* VERTICAL SUBNAV - REMOVE BULLET POINTS */
+.vertical_menu, .vertical_submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 /* ==================== OVERLAY TEXT FOR BANNER IMAGE ==================== */
 #home_overlay_text {
   position: relative;
@@ -272,6 +284,7 @@ header {
 #property_experts {
   justify-content: space-around;
   margin-top: 10px;
+  margin-left: 23.85%;
 }
 
 /* PROPERTY EXPERT IMAGE  */
@@ -358,10 +371,10 @@ header {
 
 /* ==================== HOMEPAGE TITLES SECTION ==================== */
 .homepage_titles {
-  clear: both; /* -- CLEAR BEING USED FOR ASSIGNMENT -- */
-  width: 100%;
+  width: 1000px;
   text-align: center;
   z-index: 1;
+  margin-left: 25%;
   margin-top: 30px;
   margin-bottom: 10px;
   height: 60px;
@@ -380,11 +393,10 @@ header {
 
 /* SLIDESHOW CONTAINER */
 .slideshow_container {
-  min-width: 900px;
-  max-width: 900px;
+  width: 1000px;
   height: 300px;
+  margin-left: 24%;
   position: relative;
-  margin-left: 50px;
   background: #0a828d;
   float: left;
   padding: 14px;
@@ -443,7 +455,8 @@ header {
 /* SLIDESHOW - REVIEW STARS */
 .review_star_container {
   float: left;
-  margin-left: 365px;
+  width: 1000px;
+  margin-left: 414px;
 }
 .review_star_container img {
   display: inline-block;
@@ -465,7 +478,8 @@ header {
   color: #f2f2f2;
   font-size: 16px;
   position: relative;
-  margin: auto;
+  margin-left: 5%;
+  width: 90%;
   margin-top: 4px;
   text-align: center;
   font-family: verdana;
@@ -497,7 +511,7 @@ header {
   font-size: 16px;
   font-family: verdana;
   color: white;
-  margin-left: 50px;
+  margin-left: 26.75%;
   display: inline-block;
 }
 
@@ -796,7 +810,6 @@ header {
 }
 
 /* ==================== CONTACT US PAGE CSS ==================== */
-
 /* -- CONTACT DESCRIPTION -- */
 #contact_description {
   margin-top: -40px;
@@ -804,15 +817,76 @@ header {
   text-align: center;
   font-size: 18px;
   line-height: 30px;
-  width: 90%;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* CONTAINER FOR THE CONTACT PAGE INFORMATION AND FORM */
+/* CONTACT CONTAINER */
 #contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  max-width: 1300px;
+  margin-left: 21%;
+  box-sizing: border-box;
+}
+
+/* CONTACT INFORMATION (CONTACT INFORMATION LEFT SIDE) */
+#contact_information {
+  flex: 1;
+  min-width: 450px;
+  max-width: 650px;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: Verdana;
+}
+
+/* CONTACT INFO HEADINGS */
+#contact_information h2 {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: -10px;
+  margin-left: 13%;
+  color: #11828d;
+  font-family: Verdana;
+  font-size: 24px;
+}
+
+/* WORK HOURS INFORMATION */
+#work_hours {
+  text-align: center !important;
+  font-size: 18px !important;
+  margin-left: 8% !important;
+  white-space: nowrap;
+}
+
+/* MAP FRAME */
+#contact_information iframe {
+  width: 500px;
+  height: 450px;
+  border: 1px solid #262637;
+  display: block;
+  margin: 30px auto 30px auto;
+}
+
+/* CONTACT INFO TEXT */
+#contact_information p {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+/* TRANSPARENT BACKGROUN FOR CONTACT INFO */
+#contact_text_box {
+  background: #262637c7;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
   width: 100%;
-  height: 765px;
+  margin-top: 20px;
+  margin-left: 5%;
 }
 
 /* SUB CONTAINERS TO SEPERATE CONTACT INFO AND FORM */
@@ -821,38 +895,17 @@ header {
   float: left;
 }
 
-/* CONTACT INFORMATION (CONTACT INFORMATION LEFT SIDE) */
-#contact_information {
-  width: 50%;
-  height: 765px;
-  float: left;
-  padding: 10px;
-}
-
-/* CONTACT INFO HEADINGS */
-#contact_information h2 {
-  text-align: center;
-  margin-top: 12px;
-  margin-bottom: -6px;
-  color: #11828d;
-}
-
-/* CONTACT INFO TEXT */
-#contact_information p {
-  color: #262637;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-left: 22px;
-}
+/********************* FEEDBACK FORM ************************/
 
 /* FEEDBACK FORM (CONTACT INFORMATION RIGHT SIDE) */
 #feedback_form {
   background: #11828d;
   color: white;
-  width: 50%;
-  height: 756px;
+  width: 45%;
   padding: 30px;
   float: right;
+  margin-right: 15%;
+  margin-top: 1.1%;
   border: 1px solid #262637;
 }
 
@@ -934,7 +987,7 @@ textarea:focus {
   width: 850px;
   font-size: 15px;
   height: 224px;
-  margin-left: 0;
+  margin-left: 20%;
   margin-top: -20px;
 }
 
@@ -980,8 +1033,8 @@ textarea:focus {
   justify-content: space-around;
   width: 850px;
   font-size: 15px;
-  margin-right: 0;
   margin-top: 40px;
+  margin-right: 20%;
   float: right;
   color: white;
 }
@@ -1030,7 +1083,7 @@ textarea:focus {
   font-size: 15px;
   height: 224px;
   float: left;
-  margin-left: 0;
+  margin-left: 20%;
   margin-top: 40px;
 }
 #about_values_description {
@@ -1075,7 +1128,7 @@ textarea:focus {
   width: 850px;
   font-size: 15px;
   height: 224px;
-  margin-right: 0;
+  margin-right: 20%;
   margin-top: 40px;
   float: right;
   color: white;
@@ -1126,9 +1179,9 @@ textarea:focus {
   font-size: 15px;
   height: 224px;
   float: left;
-  margin-left: 0;
+  margin-left: 20%;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 #about_experienced_description {
   background: #11838d5d;
@@ -1166,22 +1219,37 @@ textarea:focus {
   height: 224px;
 }
 
-/* ==================== MEET THE TEAM PAGE ==================== /*
+
+/* ==================== MEET THE TEAM PAGE ==================== */
+
+/* MEMBER CONTAINER */
+#memberContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 425px);
+  gap: 32px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
 
 /* TEAM MEMBER CONTAINER */
 .team_member_contain {
-  height: 420px;
-  width: 300px;
+  width: 350px;
+  height: 425px;
   border-radius: 10px;
   float: left;
   margin-left: 16px;
   margin-right: 16px;
+  margin-top: 16px;
+  background-color: #26263723;
+  padding: 2px;
 }
 /* TEAM MEMBER PHOTOS */
 .team_photo {
   border-radius: 500px;
   border: 3px solid #262637;
-  margin-left: 48px;
+  margin-left: 20%;
   margin-top: 24px;
   background: #262637;
   margin-bottom: 0;
@@ -1203,4 +1271,20 @@ textarea:focus {
 .team_member_info hr {
   width: 70%;
   border: solid 1px #262637;
+}
+
+
+/***************************** FOOTER ************************************/
+footer hr {
+  border: 1px solid #262637; 
+  margin-top: 35px; 
+  position: relative;
+}
+
+footer p {
+  margin-left: 31.5%;
+}
+
+footer h5 {
+  margin-left: 5%;
 }

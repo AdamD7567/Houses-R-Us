@@ -92,88 +92,82 @@
       </div>
       <!-- CONTACT INFORMATION CONTAINER -->
       <div id="contact_container">
-        <div class="contact_section">
-          <!-- MAP AND CONTACT INFORMATION -->
-          <div id="contact_information">
-            <div>
-              <h2 style="margin-top: 15px;">OFFICE HOURS</h2>
-              <p style="text-align: center; font-size: 18px; margin-left: 2px;">MON - FRI: 9-5 | SAT: 11-4 | SUN: CLOSED</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.3223458785436!2d-0.47667813033529466!3d51.54459243227917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766e776c1e69b3%3A0x34a1b7c69efb465f!2s266-268%20High%20St%2C%20Uxbridge%20UB8%201LQ!5e0!3m2!1sen!2suk!4v1706809541916!5m2!1sen!2suk" style="height: 440px; width: 438px; border: 1px solid #262637; margin-left: 22px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <h2 style="margin-top: 26px; margin-bottom: 20px;">CONTACT INFORMATION</h2>
-              <p>OFFICE NUMBER (UK): 01632 960275</p>
-              <p>OFFICE NUMBER (INTERNATIONAL): +44 1632 960275</p>
-              <p>GENERAL ENQUIRES: 40196735@HRUC.AC.UK</p>
-              <p>ADDRESS: 266-268 HIGH STREET, UXBRIDGE, UB8 1LQ</p>
-            </div>
+        <!-- MAP AND CONTACT INFORMATION -->
+        <div id="contact_information">
+          <h2>OFFICE HOURS</h2>
+          <p id="work_hours">MON - FRI: 9-5 | SAT: 11-4 | SUN: CLOSED</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.3223458785436!2d-0.47667813033529466!3d51.54459243227917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766e776c1e69b3%3A0x34a1b7c69efb465f!2s266-268%20High%20St%2C%20Uxbridge%20UB8%201LQ!5e0!3m2!1sen!2suk!4v1706809541916!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+         
+          <h2>CONTACT INFORMATION</h2>
+          <!-- CONTACT TEXT BOX -->
+          <div id="contact_text_box">
+            <p>OFFICE NUMBER (UK): 01632 960275</p>
+            <p>OFFICE NUMBER (INTERNATIONAL): +44 1632 960275</p>
+            <p>GENERAL ENQUIRES: 40196735@HRUC.AC.UK</p>
+            <p>ADDRESS: 266-268 HIGH STREET, UXBRIDGE, UB8 1LQ</p>
           </div>
-          <div class="contact_section">
-            <!-- FEEDBACK FORM -->
-            <div id="feedback_form">
-              <form name="f_form" onsubmit="return validate()" action="mailto:40196735@hruc.ac.uk?subject=Customer_Query" method="post" enctype="text/plain">
-                <!-- FIRST NAME -->
-                <label for="fname">FIRST NAME:</label>
-                <input type="text" id="fname" name="fname" placeholder="Your name.." />
+        </div>
+        <!-- FEEDBACK FORM -->
+        <div id="feedback_form">
+          <form name="f_form" onsubmit="return validate()" action="mailto:40196735@hruc.ac.uk?subject=Customer_Query" method="post" enctype="text/plain">
+            <!-- FIRST NAME -->
+            <label for="fname">FIRST NAME:</label>
+            <input type="text" id="fname" name="fname" placeholder="Your name.." />
 
-                <!-- SURNAME -->
-                <label for="lname">SURNAME:</label>
-                <input type="text" id="lname" name="lname" placeholder="Your surname.." />
+            <!-- SURNAME -->
+            <label for="lname">SURNAME:</label>
+            <input type="text" id="lname" name="lname" placeholder="Your surname.." />
 
-                <!-- EMAIL -->
-                <label for="email">EMAIL:</label>
-                <input type="text" id="email" name="email" placeholder="Your email.." />
+            <!-- EMAIL -->
+            <label for="email">EMAIL:</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." />
 
-                <!-- PHONE NUMBER -->
-                <label for="phone">PHONE NUMBER:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your phone number.." />
+            <!-- PHONE NUMBER -->
+            <label for="phone">PHONE NUMBER:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number.." />
 
-                <!-- CONTACT METHOD -->
-                <label>PREFERRED CONTACT METHOD:</label><br />
-                <input type="radio" id="pref_email" name="pref_contact" value="Email" />
-                <label for="pref_email">Email</label>
+            <!-- CONTACT METHOD -->
+            <label>PREFERRED CONTACT METHOD:</label><br />
+            <input type="radio" id="pref_email" name="pref_contact" value="Email" />
+            <label for="pref_email">Email</label>
 
-                <input type="radio" id="pref_phone" name="pref_contact" value="Phone" />
-                <label for="pref_phone">Phone</label>
+            <input type="radio" id="pref_phone" name="pref_contact" value="Phone" />
+            <label for="pref_phone">Phone</label>
 
-                <input type="radio" id="pref_text" name="pref_contact" value="SMS" />
-                <label for="pref_text">SMS</label><br />
+            <input type="radio" id="pref_text" name="pref_contact" value="SMS" />
+            <label for="pref_text">SMS</label><br />
 
-                <!-- CONTACT REASON -->
-                <label>REASON FOR CONTACT:</label><br />
-                <input type="checkbox" id="option1" name="reason" value="buying" />
-                <label for="option1">Buying</label>
+            <!-- CONTACT REASON -->
+            <label>REASON FOR CONTACT:</label><br />
+            <input type="checkbox" id="option1" name="reason" value="buying" />
+            <label for="option1">Buying</label>
+            <input type="checkbox" id="option2" name="reason" value="selling" />
+            <label for="option2">Selling</label>
+            <input type="checkbox" id="option3" name="reason" value="renting" />
+            <label for="option3">Renting</label>
+            <input type="checkbox" id="option4" name="reason" value="query" />
+            <label for="option4">Query</label><br />
 
-                <input type="checkbox" id="option2" name="reason" value="selling" />
-                <label for="option2">Selling</label>
+            <!-- PROPERTY AREA -->
+            <label for="area">LISTED PROPERTY AREA:</label>
+            <select id="area" name="area">
+              <option disabled selected value="">-- Select an option --</option>
+              <option id="area_option1" value="none">None</option>
+              <option id="area_option2" value="greenford">Greenford</option>
+              <option id="area_option3" value="harrow">Harrow</option>
+              <option id="area_option4" value="ruislip">Ruislip</option>
+              <option id="area_option5" value="uxbridge">Uxbridge</option>
+              <option id="area_option6" value="wembley">Wembley</option>
+            </select>
 
-                <input type="checkbox" id="option3" name="reason" value="renting" />
-                <label for="option3">Renting</label>
+            <!-- ADDITIONAL INFO -->
+            <label for="add_info">ADDITIONAL INFORMATION:</label>
+            <textarea id="add_info" name="add_info" placeholder="Information about your query here.."></textarea>
 
-                <input type="checkbox" id="option4" name="reason" value="query" />
-                <label for="option4">Query</label><br />
-
-                <!-- PROPERTY AREA -->
-                <label for="area">LISTED PROPERTY AREA:</label>
-                <select id="area" name="area">
-                  <option disabled selected value="">-- Select an option --</option>
-                  <option id="area_option1" value="none">None</option>
-                  <option id="area_option2" value="greenford">Greenford</option>
-                  <option id="area_option3" value="harrow">Harrow</option>
-                  <option id="area_option4" value="ruislip">Ruislip</option>
-                  <option id="area_option5" value="uxbridge">Uxbridge</option>
-                  <option id="area_option6" value="wembley">Wembley</option>
-                </select>
-
-                <!-- ADDITIONAL INFO -->
-                <label for="add_info">ADDITIONAL INFORMATION:</label>
-                <textarea id="add_info" name="add_info" placeholder="Information about your query here.."></textarea>
-
-                <!-- SUBMIT BUTTON -->
-                <div>
-                  <input type="submit" value="Send" />
-                </div>
-              </form>
-            </div>
-          </div>
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Send" />
+          </form>
         </div>
       </div>
       <!-------------------------------- END OF CONTACT US DESCRIPTION/INSTRUCTION SECTION -------------------------------->
@@ -182,7 +176,7 @@
 
     <!-------------------------------- FOOTER SECTION -------------------------------->
     <footer>
-      <hr style="border: 1px solid #262637; margin-top: 15px; position: relative;" />
+      <hr/>
       <!-- COPYRIGHT -->
       <h5>&copy;Houses R Us 2024</h5>
     </footer>
